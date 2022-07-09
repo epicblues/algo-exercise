@@ -9,12 +9,11 @@ import java.util.Set;
 import java.util.Map.Entry;
 
 // public class Main{
-public class Backjoon {
+public class bj1157 {
     
     public static void main(String[] args) throws IOException {
-        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        // String input = br.readLine();
-        String input = "Mississipi"; 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String input = br.readLine();
         char[] charArray = input.toCharArray();
 
         Map<Character, Integer> countMap = new HashMap<>();
