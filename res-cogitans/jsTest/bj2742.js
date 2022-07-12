@@ -1,8 +1,8 @@
-// let n = require('fs');
-// const input = fs.readFileSync('/dev/stdin').toString();
-const input = 5;
-console.log('aa');
-for (var i = input; i >= 0; i--) {
-    console.log(i);
+let fs = require('fs');
+const input = Number(fs.readFileSync('/dev/stdin').toString());
+let answer = '';
+
+for (let i = input; i > 0; i--) {
+    answer += i + '\n';
 }
-console.log("ㅑㅑ")
+console.log(answer);
