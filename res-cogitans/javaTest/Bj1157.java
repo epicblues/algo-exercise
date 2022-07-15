@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.Map.Entry;
 
 // public class Main{
-public class bj1157 {
+public class Bj1157 {
     
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
