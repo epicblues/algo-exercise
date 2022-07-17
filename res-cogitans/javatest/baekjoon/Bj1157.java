@@ -5,41 +5,38 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 import java.util.Map.Entry;
+import java.util.Set;
 
-// public class Main{
 public class Bj1157 {
-    
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String input = br.readLine();
-        char[] charArray = input.toCharArray();
 
-        Map<Character, Integer> countMap = new HashMap<>();
-        for (char c : charArray) {
-            if(countMap.get(c) == null) {
-                countMap.put(c, 1);
-            }
-            else {
-                Integer previous = countMap.get(c);
-                countMap.put(c, ++previous);
-            }
-        }
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String input = br.readLine();
+		char[] charArray = input.toCharArray();
 
-        char previousChar = '?';
-        int previous = 0;
-        Set<Entry<Character, Integer>> entrySet = countMap.entrySet();
-        for (Entry<Character,Integer> entry : entrySet) {
-            if (entry.getValue() > previous) {
-                previous = entry.getValue();
-                previousChar = entry.getKey();
-            }
-            else if (entry.getValue() == previous){
-                previousChar = '?';
-            }
-        }
+		Map<Character, Integer> countMap = new HashMap<>();
+		for (char c : charArray) {
+			if (countMap.get(c) == null) {
+				countMap.put(c, 1);
+			} else {
+				Integer previous = countMap.get(c);
+				countMap.put(c, ++previous);
+			}
+		}
 
-        System.out.println(Character.toUpperCase(previousChar));
-    }
+		char previousChar = '?';
+		int previous = 0;
+		Set<Entry<Character, Integer>> entrySet = countMap.entrySet();
+		for (Entry<Character, Integer> entry : entrySet) {
+			if (entry.getValue() > previous) {
+				previous = entry.getValue();
+				previousChar = entry.getKey();
+			} else if (entry.getValue() == previous) {
+				previousChar = '?';
+			}
+		}
+
+		System.out.println(Character.toUpperCase(previousChar));
+	}
 }
