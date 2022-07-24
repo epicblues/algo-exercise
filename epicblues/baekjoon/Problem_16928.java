@@ -49,7 +49,7 @@ public class Problem_16928 {
 			return;
 		}
 		visited[target] = stage;
-		// 어느 쪽이 더 빠른 수단인지 끝까지 탐색해야 알 수 있다.(뱀을 타거나 주사위 숫자가 작아도 알 수 없)
+		// 어느 쪽이 더 빠른 수단인지 끝까지 탐색해야 알 수 있다.(뱀을 타거나 주사위 숫자가 작아도 알 수 없음)
 		for (int i = 6; i >= 1; i--) {
 			int move = target + i;
 			int nextTarget = table[move];
