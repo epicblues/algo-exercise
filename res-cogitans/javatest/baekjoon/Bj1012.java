@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 /*
 백준 1012 유기농 배추
-Class3, Silver2, DP, https://www.acmicpc.net/problem/1012
+Class3, Silver2, Graph, DFS, https://www.acmicpc.net/problem/1012
  */
 public class Bj1012 {
 	public static void main(String[] args) throws IOException {
