@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Problem_15657 {
 	static int max = 0;
 	static StringBuilder answer = new StringBuilder();
 
